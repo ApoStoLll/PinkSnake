@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Змея</string>
+    <string name="about_text">Это простая игра с открытым исходным кодом. Проведи черную змею к зеленой еде, преодолевая препятствия на пути.</string>
+    <string name="about">Инфо</string>
+    <string name="license">Лицензия</string>
+    <string name="clear">Отчистить</string>
+    <string name="share_screenshot">Переслать скриншот</string>
+    <string name="no_app_available">Нет доступного приложения</string>
+    <string name="new_game">Новая игра</string>
+    <string name="unknown">Неизвесно</string>
+    <string name="top_scores">Лучшие игры</string>
+    <string name="game_over">Игра закончена</string>
+    <string name="paused">Пауза</string>
+
+</resources>

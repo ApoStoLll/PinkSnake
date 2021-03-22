@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/container"
+    tools:context="com.sdirin.games.testingsnake.activities.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:text="235" />
+    </LinearLayout>
+
+    <com.sdirin.games.testingsnake.view.SnakeView
+        android:id="@+id/game_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/action_bar" />
+
+    <com.sdirin.games.testingsnake.view.GameController
+        android:id="@+id/controller_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/action_bar" />
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/main_text_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        tools:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/controller_view"
+        app:layout_constraintStart_toStartOf="@+id/controller_view"
+        app:layout_constraintTop_toBottomOf="@+id/action_bar">
+
+        <TextView
+            android:id="@+id/tv_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/background_light"
+            android:fontFamily="sans-serif"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="@string/paused"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="45sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tv_added_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="sans-serif"
+        android:gravity="center_vertical"
+        android:padding="0dp"
+        android:text="@string/paused"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@color/semiTransparentAccent"
+        android:textSize="85sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/controller_view"
+        tools:text="33" />
+
+</android.support.constraint.ConstraintLayout>

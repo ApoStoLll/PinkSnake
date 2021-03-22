@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Snake</string>
+    <string name="about_text">This is a simple open source game. Have fun leading the black snake to green food. Try to avoid obstacles on the way.</string>
+    <string name="about">About</string>
+    <string name="license">License</string>
+
+      <string name="clear">Clear</string>
+    <string name="share_screenshot">Share Screenshot</string>
+    <string name="no_app_available">No App Available</string>
+    <string name="new_game">New Game</string>
+    <string name="unknown">Unknown</string>
+    <string name="top_scores">Top Scores</string>
+    <string name="game_over">Game Over</string>
+    <string name="paused">Paused</string>
+
+</resources>
